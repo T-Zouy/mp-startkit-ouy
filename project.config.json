@@ -10,7 +10,7 @@
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
 	"appid": "touristappid",
-	"projectname": "mp-startkit-ouy",
+	"projectname": "mpvue-startkit-ouy",
 	"condition": {
 		"search": {
 			"current": -1,

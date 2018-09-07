@@ -1,8 +1,8 @@
 {
-  "name": "mp-startkit-ouy",
+  "name": "mpvue-startkit-ouy",
   "version": "1.0.0",
-  "description": "A Mpvue project",
-  "author": "lin_yu <lin_yu@hunliji.com>",
+  "description": "startkit of mpuve",
+  "author": "lin_yu",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "mpvue": "^1.0.11",
-    "mpvue-entry": "^1.4.4",
     "mpvue-router-patch": "^0.2.1",
     "vuex": "^3.0.1"
   },
@@ -42,14 +41,14 @@
     "express": "^4.16.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
-    "flyio": "^0.5.9",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "glob": "^7.1.2",
     "html-webpack-plugin": "^3.2.0",
     "http-proxy-middleware": "^0.18.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
-    "mpvue-loader": "^1.0.13",
+    "mpvue-entry": "^1.5.2",
+    "mpvue-loader": "^1.1.2",
     "mpvue-template-compiler": "^1.0.11",
     "mpvue-webpack-target": "^1.0.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
@@ -59,6 +58,7 @@
     "postcss-mpvue-wxss": "^1.0.0",
     "prettier": "~1.12.1",
     "px2rpx-loader": "^0.1.10",
+    "relative": "^3.0.2",
     "rimraf": "^2.6.0",
     "semver": "^5.3.0",
     "shelljs": "^0.8.1",
@@ -69,7 +69,7 @@
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware-hard-disk": "^1.12.0",
     "webpack-merge": "^4.1.0",
-    "webpack-mpvue-asset-plugin": "^0.0.2"
+    "webpack-mpvue-asset-plugin": "^0.1.1"
   },
   "engines": {
     "node": ">= 4.0.0",

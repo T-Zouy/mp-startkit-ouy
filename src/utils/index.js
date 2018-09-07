@@ -3,7 +3,7 @@ function formatNumber (n) {
   return str[1] ? str : `0${str}`
 }
 
-export function formatTime (date) {
+function formatTime (date) {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
   const day = date.getDate()
@@ -18,7 +18,42 @@ export function formatTime (date) {
   return `${t1} ${t2}`
 }
 
+function getLoginQuery () {
+  return new Promise((resolve) => {
+    wx.getUserInfo({
+      success: (res) => {
+        const userInfo = res.userInfo
+        const encryptedData = res.encryptedData
+        const iv = res.iv
+        wx.login({
+          success: (loginMsg) => {
+            let query
+            if (loginMsg.code) {
+              query = {
+                code: loginMsg.code,
+                nickName: userInfo.nickName,
+                avatarUrl: userInfo.avatarUrl,
+                gender: userInfo.gender,
+                city: userInfo.city,
+                province: userInfo.province,
+                country: userInfo.country,
+                scene: '',
+                encryptedData,
+                iv
+              }
+              resolve(query)
+            } else {
+              resolve({})
+            }
+          }
+        })
+      }
+    })
+  })
+}
+
 export default {
   formatNumber,
-  formatTime
+  formatTime,
+  getLoginQuery
 }

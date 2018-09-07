@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/main/index",
+    "pages/logs/index",
+    "pages/counter/index",
+    "pages/not-tab/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9B9B9B",
+    "selectedColor": "#37B35D",
+    "borderStyle": "#D4D4D4",
+    "backgroundColor": "#FAFAFA",
+    "list": [
+      {
+        "text": "计数器",
+        "pagePath": "pages/counter/index",
+        "iconPath": "static/assets/sign-up.png",
+        "selectedIconPath": "static/assets/sign-up-active.png"
+      },
+      {
+        "text": "日志",
+        "pagePath": "pages/logs/index",
+        "iconPath": "static/assets/create.png",
+        "selectedIconPath": "static/assets/create-active.png"
+      },
+      {
+        "text": "主页",
+        "pagePath": "pages/main/index",
+        "iconPath": "static/assets/mine.png",
+        "selectedIconPath": "static/assets/mine-active.png"
+      }
+    ]
+  }
+}

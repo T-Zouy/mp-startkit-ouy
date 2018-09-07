@@ -9,6 +9,8 @@
 
 > 5.时间处理插件[day.js](https://github.com/iamkun/dayjs)：Moment.js 的 2kB 轻量化方案
 
+> 6.支持less
+
 # mp-startkit-ouy
 
 > A Mpvue project
@@ -28,5 +30,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
